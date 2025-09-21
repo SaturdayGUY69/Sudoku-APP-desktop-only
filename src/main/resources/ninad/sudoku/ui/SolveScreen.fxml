@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ninad.sudoku.ui.SolveScreenController"
+           style="-fx-background-color: white;">
+
+    <!-- Main content -->
+    <VBox spacing="20" alignment="CENTER">
+
+        <!-- Timer / status -->
+        <Label fx:id="statusLabel"
+               text="Ready to solve"
+               style="-fx-font-size: 20px; -fx-text-fill: black;"/>
+
+        <!-- Sudoku Grid with outer border -->
+        <StackPane style="-fx-border-color: black; -fx-border-width: 2;"
+                   maxWidth="450" maxHeight="450"
+                   minWidth="450" minHeight="450"
+                   prefWidth="450" prefHeight="450">
+            <GridPane fx:id="sudokuGrid" alignment="CENTER"/>
+        </StackPane>
+
+        <!-- Solve button -->
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="autoSolveButton" text="Auto-Solve" prefWidth="150"/>
+            <Button fx:id="backButton" text="Back" prefWidth="150"/>
+        </HBox>
+
+    </VBox>
+
+</StackPane>

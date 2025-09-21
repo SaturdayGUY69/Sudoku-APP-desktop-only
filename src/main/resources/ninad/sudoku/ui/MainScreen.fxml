@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ninad.sudoku.ui.MainScreenController"
+           prefWidth="600" prefHeight="700">
+
+    <VBox alignment="CENTER" spacing="30" style="-fx-padding: 50; -fx-background-color: #f0f0f0;">
+
+        <Label text="Sudoku Master" style="-fx-font-size: 36px; -fx-font-weight: bold;"/>
+
+        <Button fx:id="playButton" text="Play" prefWidth="200" prefHeight="50" style="-fx-font-size: 18px;"/>
+        <Button fx:id="solveButton" text="Solve" prefWidth="200" prefHeight="50" style="-fx-font-size: 18px;"/>
+        <Button fx:id="exitButton" text="Exit" prefWidth="200" prefHeight="50" style="-fx-font-size: 18px;"/>
+
+    </VBox>
+
+</StackPane>
